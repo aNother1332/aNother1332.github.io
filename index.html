@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== 粒子背景 ===== -->
+  <canvas id="particles"></canvas>
+
+  <!-- ===== 导航栏 ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">⟨Dev /⟩</a>
+      <div class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#gallery">作品</a>
+        <a href="#contact">联系</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <img src="https://avatars.githubusercontent.com/u/0?v=4" alt="avatar" class="hero-avatar" id="avatar" />
+        <div class="avatar-ring"></div>
+      </div>
+      <p class="hero-greeting">你好，我是</p>
+      <h1 class="hero-name" id="heroName">Your Name</h1>
+      <p class="hero-title" id="heroTitle">Full-Stack Developer · Open Source Enthusiast</p>
+      <p class="hero-bio" id="heroBio">热爱技术，热爱开源。专注于构建优雅、高效的数字体验。</p>
+      <div class="hero-links">
+        <a href="https://github.com/" target="_blank" class="social-btn" title="GitHub">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:your@email.com" class="social-btn" title="Email">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="social-btn" title="Twitter">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">42</span><span class="stat-label">公开项目</span></div>
+        <div class="stat"><span class="stat-num">1.2k</span><span class="stat-label">贡献</span></div>
+        <div class="stat"><span class="stat-num">300+</span><span class="stat-label">Stars</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </header>
+
+  <!-- ===== 技能 ===== -->
+  <section class="section" id="skills">
+    <h2 class="section-title">技能栈</h2>
+    <div class="skills-grid">
+      <div class="skill-card" style="--accent:#61dafb"><div class="skill-icon">⚛️</div><h3>React</h3><div class="skill-bar"><div style="width:90%"></div></div></div>
+      <div class="skill-card" style="--accent:#3178c6"><div class="skill-icon">🔷</div><h3>TypeScript</h3><div class="skill-bar"><div style="width:85%"></div></div></div>
+      <div class="skill-card" style="--accent:#68a063"><div class="skill-icon">🟢</div><h3>Node.js</h3><div class="skill-bar"><div style="width:80%"></div></div></div>
+      <div class="skill-card" style="--accent:#e535ab"><div class="skill-icon">🎨</div><h3>CSS / Tailwind</h3><div class="skill-bar"><div style="width:88%"></div></div></div>
+      <div class="skill-card" style="--accent:#ff6f61"><div class="skill-icon">🦀</div><h3>Rust</h3><div class="skill-bar"><div style="width:65%"></div></div></div>
+      <div class="skill-card" style="--accent:#0db7ed"><div class="skill-icon">🐳</div><h3>Docker</h3><div class="skill-bar"><div style="width:75%"></div></div></div>
+    </div>
+  </section>
+
+  <!-- ===== 项目 ===== -->
+  <section class="section section-alt" id="projects">
+    <h2 class="section-title">精选项目</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+        <h3>🚀 Awesome CLI Tool</h3>
+        <p>一个高效的命令行工具，提升开发者日常工作效率。</p>
+        <div class="project-tags"><span>Go</span><span>CLI</span><span>Open Source</span></div>
+        <a href="#" class="project-link">查看详情 →</a>
+      </article>
+      <article class="project-card">
+        <div class="project-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+        <h3>📊 Data Dashboard</h3>
+        <p>实时数据可视化平台，支持多数据源接入和自定义图表。</p>
+        <div class="project-tags"><span>React</span><span>D3.js</span><span>WebSocket</span></div>
+        <a href="#" class="project-link">查看详情 →</a>
+      </article>
+      <article class="project-card">
+        <div class="project-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+        <h3>🤖 AI Chat App</h3>
+        <p>基于大语言模型的智能对话应用，支持多轮对话和上下文理解。</p>
+        <div class="project-tags"><span>Python</span><span>FastAPI</span><span>LLM</span></div>
+        <a href="#" class="project-link">查看详情 →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 文件上传 / 作品展示 ===== -->
+  <section class="section" id="gallery">
+    <h2 class="section-title">作品展示</h2>
+    <p class="section-desc">上传你的文件（图片、PDF、文档等），它们会在这里展示。</p>
+
+    <div class="upload-zone" id="uploadZone">
+      <div class="upload-icon">
+        <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M24 32V10M16 18l8-8 8 8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M40 30v10a4 4 0 01-4 4H12a4 4 0 01-4-4V30" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <p class="upload-text">拖拽文件到这里，或 <label for="fileInput" class="upload-label">点击选择</label></p>
+      <p class="upload-hint">支持图片、PDF、视频、音频、文本等格式</p>
+      <input type="file" id="fileInput" multiple hidden />
+    </div>
+
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="image">图片</button>
+      <button class="filter-btn" data-filter="video">视频</button>
+      <button class="filter-btn" data-filter="audio">音频</button>
+      <button class="filter-btn" data-filter="pdf">PDF</button>
+      <button class="filter-btn" data-filter="other">其他</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+
+    <div class="gallery-empty" id="galleryEmpty">
+      <p>📭 还没有上传任何文件</p>
+    </div>
+  </section>
+
+  <!-- ===== 联系 ===== -->
+  <section class="section section-alt" id="contact">
+    <h2 class="section-title">联系我</h2>
+    <div class="contact-card">
+      <p>有想法？想合作？欢迎随时联系我！</p>
+      <a href="mailto:your@email.com" class="btn-primary">📧 发送邮件</a>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <p>© 2026 Your Name · Built with ❤️ · Hosted on GitHub Pages</p>
+  </footer>
+
+  <!-- ===== 图片灯箱 ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img src="" alt="preview" id="lightboxImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
