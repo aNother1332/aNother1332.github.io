@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - SUSTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ========== 导航栏 ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MyHomepage</a>
+            <button class="nav-toggle" id="navToggle" aria-label="切换菜单">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#education" class="nav-link">教育经历</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#files" class="nav-link">文件下载</a></li>
+                <li><a href="#contact" class="nav-link">联系我</a></li>
+                <!-- 语言切换 -->
+                <li><button class="lang-toggle" id="langToggle" title="Switch Language">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== 首页 / 英雄区域 ========== -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="images/avatar.jpg" alt="头像" id="heroAvatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="avatar-placeholder" style="display:none;">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <h1 class="hero-name">你的名字</h1>
+            <p class="hero-tagline" id="heroTagline">南方科技大学 · 计算机科学与工程系</p>
+            <p class="hero-bio">探索科技，创造未来 | Exploring Technology, Creating the Future</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">了解更多</a>
+                <a href="#files" class="btn btn-outline">下载文件</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/你的用户名" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ========== 关于我 ========== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="section-line"></div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>你好！我是南方科技大学的一名学生，目前就读于计算机科学与工程系。</p>
+                    <p>我对<strong>人工智能、软件开发、开源技术</strong>充满热情。在课余时间，我喜欢探索新技术、参与开源项目，并与志同道合的朋友一起学习和成长。</p>
+                    <p>我相信技术可以改变世界，致力于用代码创造有价值的解决方案。目前我正在积极寻找实习和研究机会，期待能与优秀的团队一起工作。</p>
+                    <p>除了编程，我还喜欢阅读、摄影和旅行。这些爱好让我保持创造力和对世界的好奇心。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">年编程经验</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">完成项目</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">技术栈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 教育经历 ========== -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">教育经历</h2>
+            <div class="section-line"></div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2027</span>
+                        <h3>南方科技大学</h3>
+                        <h4>计算机科学与工程系 · 本科</h4>
+                        <p>主修课程：数据结构与算法、操作系统、计算机网络、数据库系统、机器学习等。</p>
+                        <p>GPA: 3.X / 4.0</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2023</span>
+                        <h3>你的高中</h3>
+                        <h4>高中阶段</h4>
+                        <p>在高中期间对计算机科学产生了浓厚的兴趣，开始自学编程。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 技能 ========== -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">技能</h2>
+            <div class="section-line"></div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> 编程语言</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Web 开发</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI / 数据科学</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> 工具 & 其他</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">LaTeX</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 项目经历 ========== -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">项目经历</h2>
+            <div class="section-line"></div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>项目名称 1</h3>
+                    <p>这是一个使用 Python 和 PyTorch 实现的机器学习项目，用于图像分类任务。</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>CNN</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> 代码</a>
+                        <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> 演示</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>项目名称 2</h3>
+                    <p>一个基于 React 和 Node.js 的全栈 Web 应用，实现了用户管理和数据可视化功能。</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> 代码</a>
+                        <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> 演示</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>项目名称 3</h3>
+                    <p>一个跨平台移动应用，使用 Flutter 开发，支持实时数据同步和离线使用。</p>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> 代码</a>
+                        <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> 演示</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 文件下载 ========== -->
+    <section id="files" class="section files">
+        <div class="container">
+            <h2 class="section-title">文件下载</h2>
+            <div class="section-line"></div>
+            <p class="section-desc">以下是我分享的一些文件资料，欢迎下载查阅。</p>
+
+            <!-- 文件搜索 -->
+            <div class="file-search">
+                <input type="text" id="fileSearch" placeholder="搜索文件...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <!-- 文件分类筛选 -->
+            <div class="file-categories">
+                <button class="file-cat active" data-cat="all">全部</button>
+                <button class="file-cat" data-cat="course">课程资料</button>
+                <button class="file-cat" data-cat="project">项目文件</button>
+                <button class="file-cat" data-cat="resume">简历/CV</button>
+                <button class="file-cat" data-cat="other">其他</button>
+            </div>
+
+            <!-- 文件列表 -->
+            <div class="file-list" id="fileList">
+                <!-- 文件项将通过 JS 动态渲染 -->
+            </div>
+
+            <!-- 无文件提示 -->
+            <div class="file-empty" id="fileEmpty" style="display:none;">
+                <i class="fas fa-folder-open"></i>
+                <p>暂无文件</p>
+                <span>将文件放入 files/ 目录即可在此显示</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 联系我 ========== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="section-line"></div>
+            <p class="section-desc">如果你对我的研究或项目感兴趣，欢迎通过以下方式联系我！</p>
+            <div class="contact-cards">
+                <a href="mailto:your.email@example.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>电子邮件</h3>
+                    <span>your.email@example.com</span>
+                </a>
+                <a href="https://github.com/你的用户名" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <span>github.com/你的用户名</span>
+                </a>
+                <a href="#" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <span>linkedin.com/in/你的用户名</span>
+                </a>
+                <a href="#" class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>地址</h3>
+                    <span>广东省深圳市南山区</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 页脚 ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 你的名字 · 南方科技大学学生</p>
+            <p>Powered by GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- ========== 回到顶部按钮 ========== -->
+    <button class="back-to-top" id="backToTop" title="回到顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
