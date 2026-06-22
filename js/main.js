@@ -19,67 +19,13 @@
  */
 const fileData = [
     {
-        name: '高等数学期中复习笔记.pdf',
-        path: 'files/math-notes.pdf',
+        name: '大学物理笔记.pdf',
+        path: 'files/physics.pdf',
         type: 'pdf',
         category: 'note',
-        size: '2.1 MB',
-        date: '2024-12-15',
-        description: '高等数学期中考试复习笔记'
-    },
-    {
-        name: '大学物理公式整理.pdf',
-        path: 'files/physics-formula.pdf',
-        type: 'pdf',
-        category: 'note',
-        size: '860 KB',
-        date: '2025-01-20',
-        description: '大学物理上学期公式汇总'
-    },
-    {
-        name: '线性代数期末试卷.pdf',
-        path: 'files/linear-algebra-exam.pdf',
-        type: 'pdf',
-        category: 'exam',
-        size: '1.5 MB',
-        date: '2025-01-10',
-        description: '线性代数期末考试真题'
-    },
-    {
-        name: 'C语言程序设计入门.pdf',
-        path: 'files/c-intro.pdf',
-        type: 'pdf',
-        category: 'book',
-        size: '5.8 MB',
-        date: '2024-10-05',
-        description: 'C语言入门电子书，适合初学者'
-    },
-    {
-        name: '英语四级词汇表.xlsx',
-        path: 'files/cet4-vocabulary.xlsx',
-        type: 'doc',
-        category: 'exam',
-        size: '320 KB',
-        date: '2024-11-01',
-        description: '大学英语四级高频词汇整理'
-    },
-    {
-        name: '计算机导论课件合集.zip',
-        path: 'files/cs-intro-slides.zip',
-        type: 'zip',
-        category: 'note',
-        size: '12.5 MB',
-        date: '2024-12-30',
-        description: '计算机导论课程全部课件打包'
-    },
-    {
-        name: '南科大新生指南.pdf',
-        path: 'files/sustech-guide.pdf',
-        type: 'pdf',
-        category: 'other',
-        size: '1.8 MB',
-        date: '2024-09-01',
-        description: '南方科技大学新生入学指南'
+        size: '93882 KB',
+        date: '2026-06-22',
+        description: '大学物理笔记'
     }
 ];
 
