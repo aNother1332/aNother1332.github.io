@@ -26,7 +26,7 @@ const fileData =[
         size: '93882 KB',
         date: '2026-06-22',
         description: '大学物理笔记'
-    }
+    },
     {
         name: '单摆的设计与研究实验.pdf',
         path: 'files/单摆的设计与研究实验 12510103 彭博.pdf',
@@ -35,7 +35,7 @@ const fileData =[
         size: '153 KB',
         date: '2026-06-23',
         description: '基础物理实验报告'
-    }
+    },
  {
         name: '时间测量中随机误差的分布规律.pdf',
         path: 'files/时间测量中随机误差的分布规律 12510103 彭博.pdf',
@@ -44,7 +44,7 @@ const fileData =[
         size: '250 KB',
         date: '2026-06-23',
         description: '基础物理实验报告'
-    }
+    },
 {
         name: '直线运动规律的研究.pdf',
         path: 'files/直线运动规律的研究 12510103 彭博.pdf',
@@ -53,7 +53,7 @@ const fileData =[
         size: '240 KB',
         date: '2026-06-23',
         description: '基础物理实验报告'
-    }
+    },
 {
         name: '热敏电阻温度特性研究.pdf',
         path: 'files/热敏电阻温度特性研究 12510103 彭博.pdf',
@@ -62,7 +62,7 @@ const fileData =[
         size: '439 KB',
         date: '2026-06-23',
         description: '基础物理实验报告'
-    }
+    },
 {
         name: '迈克尔逊干涉仪.pdf',
         path: 'files/迈克尔逊干涉仪 12510103 彭博.pdf',
@@ -71,7 +71,7 @@ const fileData =[
         size: '256 KB',
         date: '2026-06-23',
         description: '基础物理实验报告'
-    }
+    },
 {
         name: '热电偶性质及其应用.pdf',
         path: 'files/热电偶性质及其应用 12510103 彭博.pdf',
@@ -80,7 +80,7 @@ const fileData =[
         size: '254 KB',
         date: '2026-06-23',
         description: '基础物理实验报告'
-    }
+    },
 {
         name: '液体粘度的测定.pdf',
         path: 'files/液体粘度的测定 12510103 彭博.pdf',
