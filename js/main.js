@@ -260,3 +260,37 @@ modalClose.addEventListener('click', () => {
 wechatModal.addEventListener('click', (e) => {
     if(e.target === wechatModal) wechatModal.style.display = 'none';
 });
+// QQ弹窗与复制
+const qqBtn = document.getElementById('qqBtn');
+const qqModal = document.getElementById('qqModal');
+const qqClose = document.getElementById('qqClose');
+const copyQQBtn = document.getElementById('copyQQBtn');
+const qqNum = "3110076035";
+
+// 打开QQ弹窗
+qqBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    qqModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+});
+// 关闭QQ弹窗
+qqClose.addEventListener('click', () => {
+    qqModal.style.display = 'none';
+    document.body.style.overflow = '';
+});
+// 点击遮罩关闭
+qqModal.addEventListener('click', (e) => {
+    if (e.target === qqModal) {
+        qqModal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+});
+// 复制QQ号
+copyQQBtn.addEventListener('click', async () => {
+    try {
+        await navigator.clipboard.writeText(qqNum);
+        alert(`QQ号 ${qqNum} 已复制！`);
+    } catch {
+        alert(`复制失败，请手动复制：${qqNum}`);
+    }
+});
