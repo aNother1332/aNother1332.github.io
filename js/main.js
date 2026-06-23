@@ -89,6 +89,15 @@ const fileData =[
         size: '324 KB',
         date: '2026-06-23',
         description: '基础物理实验报告'
+    },
+    {
+        name: '线性代数作业本.pdf',
+        path: 'files/线性代数作业本.pdf',
+        type: 'pdf',
+        category: 'homework',
+        size: '12205 KB',
+        date: '2026-06-23',
+        description: '线性代数'
     }
 ];
 
