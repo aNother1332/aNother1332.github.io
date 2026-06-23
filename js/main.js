@@ -294,3 +294,9 @@ copyQQBtn.addEventListener('click', async () => {
         alert(`复制失败，请手动复制：${qqNum}`);
     }
 });
+// 顶部QQ图标打开弹窗
+document.getElementById('heroQQ').addEventListener('click',(e)=>{
+    e.preventDefault();
+    qqModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+})
