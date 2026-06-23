@@ -98,6 +98,15 @@ const fileData =[
         size: '12205 KB',
         date: '2026-06-23',
         description: '线性代数'
+    },
+    {
+        name: '大学物理作业（完整版）.pdf',
+        path: 'files/大学物理作业_完整版.pdf',
+        type: 'pdf',
+        category: 'homework',
+        size: '17112 KB',
+        date: '2026-06-23',
+        description: 'Chapter 2-37 合集，共63页'
     }
 ];
 
