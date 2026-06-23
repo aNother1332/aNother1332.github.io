@@ -242,3 +242,21 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 // 初始化
 renderFiles();
+
+// 微信弹窗逻辑
+const wechatBtn = document.getElementById('wechatBtn');
+const wechatModal = document.getElementById('wechatModal');
+const modalClose = document.getElementById('modalClose');
+
+// 打开弹窗
+wechatBtn.addEventListener('click', () => {
+    wechatModal.style.display = 'flex';
+});
+// 关闭弹窗
+modalClose.addEventListener('click', () => {
+    wechatModal.style.display = 'none';
+});
+// 点击遮罩空白处关闭
+wechatModal.addEventListener('click', (e) => {
+    if(e.target === wechatModal) wechatModal.style.display = 'none';
+});
