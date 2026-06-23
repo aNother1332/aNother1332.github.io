@@ -23,7 +23,7 @@ const fileData =[
         path: 'files/physics.pdf',
         type: 'pdf',
         category: 'note',
-        size: '93882 KB',
+        size: '9382 KB',
         date: '2026-06-22',
         description: '大学物理笔记'
     },
