@@ -17,7 +17,7 @@
  * 把实际文件放进 files/ 文件夹，
  * 然后在这个列表里添加对应的条目即可。
  */
-const fileData = [
+const fileData =[
     {
         name: '大学物理笔记.pdf',
         path: 'files/physics.pdf',
@@ -90,7 +90,6 @@ const fileData = [
         date: '2026-06-23',
         description: '基础物理实验报告'
     }
-
 ];
 
 // ============================================================
